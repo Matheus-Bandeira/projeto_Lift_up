@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Minha Página</title>
+	
+	<!--
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css"/> 
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script> 
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jqueryui.js"></script> <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+	-->
+	
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+	
+</head>
+<body>
+<div class="container">
+	<div class="well" style="margin-top: 10px">
+		<h1 id="titulo">Meu Título</h1>
+		<p>Aplicação para Salvar Meus contatos</p>
+	</div>
+</div>
+
+<div class="container">
+	<div class="col-sm-8 col-sm-offset-2">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Lista de Contatos</div>
+		</div><!--Fecha panel-->
+
+		<div class="panel panel-body">
+			<table class="table table-inverse">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>E-mail</th>
+						<th>Sexo</th>
+					</tr>
+				</thead>
+
+				<tbody id="table-body">
+					<tr>
+						<td>Matheus</td>
+						<td>matheus@gmail.com</td>
+						<td>m</td>
+					</tr>
+
+					<tr>
+						<td>Chico</td>
+						<td>chico@gmail.com</td>
+						<td>m</td>
+					</tr>
+
+					<tr>
+						<td>Sidão</td>
+						<td>sidy@gmail.com</td>
+						<td>m</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div><!-- Fecha container-->
+
+<div class="container">
+	<div class="col-sm-8 col-sm-offset-2">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title">
+					Cadastro de Contatos
+				</div>
+			</div>
+
+			<div class="panel panel-body">
+				<form id="formulario">
+					<div class="form-group">
+						Nome: <br>
+						<input type="text" name="nome" class="form-control" placeholder="Nome de Contato" size="30">
+					</div>
+
+					<div class="form-group">
+						E-mail: <br>
+						<input type="text" name="email" class="form-control" placeholder="E-mail do Contato">
+					</div>
+
+					<div class="form-group">	
+					Sexo:
+							<input type="radio" name="sexo" value="m" checked="checked">Masculino
+							<input type="radio" name="sexo" value="f">Feminino
+					</div>
+
+					<button type="submit" class="btn btn-primary" id="btnGravar">
+						<span class="glyphicon glyphicon-floppy-disk"></span> Gravar Cliente
+					</button>
+
+					<button type="reset" class="btn btn-primary" id="btn">
+						<span class="glyphicon glyphicon-trash"></span> Limpar
+					</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+	<script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../javascript/teste.js"></script>
+</body>
+</html>

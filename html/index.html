@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Agenda de Contatos</title>
+	</head>
+
+	<body>
+		<h1 id="titulo">Agenda de Contatos</h1>
+
+		<table border="1">
+			<tbody id="table-body">
+				<tr>
+					<th>Nome</th>
+					<th>E-mail</th>
+					<th>Sexo</th>
+				</tr>
+
+				<tr>
+					<td>Matheus</td>
+					<td>Matheus@gmail.com</td>
+					<td>M</td>	
+				</tr>
+
+				<tr>
+					<td>Davi</td>
+					<td>Davi@gmail.com</td>
+					<td>M</td>	
+				</tr>
+
+				<tr>
+					<td>Josi</td>
+					<td>Josi@gmail.com</td>
+					<td>M</td>	
+				</tr>
+
+			</tbody>		
+		</table>
+
+		<form style="margin-top: 50px" id="formulario">
+			Nome: <br>
+			<input id="nome" type="text" name="nome" placeholder="Nome do contato" size="30">
+			<br>
+			<br>
+			E-mail:<br>
+			<input id="email" type="text" name="email" placeholder="E-mail do contato" size="50">
+			<br>
+			<br>
+			Sexo:
+			<input type="radio" name="sexo" value="M"> M
+			<input type="radio" name="sexo" value="F"> F<br> <br>
+
+			<input id="btnGravar" type="submit" name="btn" value="Gravar">
+		</form>
+		<script type="text/javascript" src="../javascript/teste.js"></script>
+	</body>
+</html>
